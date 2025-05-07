@@ -1,0 +1,32 @@
+{
+    "Log": {
+        "Level": "debug",
+        "ClientID": "EMAIL"
+    },
+    "Dev": {
+        "Debug": true
+    },
+    "Http": {
+        "SkipCertVerification": true
+    },
+    "Redis": {
+        "Addrs": [
+            "192.168.188.166:6379"
+        ],
+        "Password": "Famous901"
+    },
+    "Consul": {
+        "Addr": "192.168.188.166:8500",
+        "Token": "48359c9b-afc2-341f-9a61-ee37f3b361b6",
+        "Service": {
+            "Name": "email",
+            "Host": "192.168.188.166",
+            "Port": 7200,
+            "Check": {
+                "Interval": "10s",
+                "Timeout": "60s"
+            }
+        }
+    },
+    "ListenAddr": ":7200"
+}

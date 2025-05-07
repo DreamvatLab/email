@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package email;
+
+option go_package = "github.com/DeamvatLab/email";
+
+message EmailAccount {
+    string ID = 1;
+    string Username = 2;
+    string Password = 3;
+    string SMTPAddress = 4;
+}
+
+message EmailDTO {
+    string AccountID = 1;
+    string From = 2;
+    repeated string To = 3;
+    repeated string CC = 4;
+    repeated string BCC = 5;
+    string Subject = 6;
+    string Body = 7;
+    repeated AttachmentDTO Attachments = 8;
+}
+
+
+message AttachmentDTO {
+    string Name = 1;
+    bytes Data = 2;
+}
+
+message SendResponse {
+    bool Success = 1;
+    string message = 2;
+}
+
+service EmailService{
+    rpc Send (EmailDTO) returns (SendResponse);
+}
