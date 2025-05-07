@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 
 	"github.com/DeamvatLab/email"
-	"github.com/DeamvatLab/email/main/core"
 	"github.com/DreamvatLab/go/xconfig"
 	"github.com/DreamvatLab/go/xerr"
 	"github.com/DreamvatLab/go/xredis"
@@ -20,9 +19,11 @@ type RedisDAL struct {
 	client redis.UniversalClient
 }
 
-func (o *RedisDAL) Init(config xconfig.IConfigProvider) {
-	var rc *xredis.RedisConfig
-	core.ConfigProvider.GetStruct("Redis", &rc)
+func (o *RedisDAL) Init(cp xconfig.IConfigProvider) {
+	connStr := cp.GetString("ConnectionStrings.Redis")
+	rc, err := xredis.ParseRedisConfig(connStr)
+	xerr.FatalIfErr(err)
+
 	o.client = xredis.NewClient(rc)
 }
 

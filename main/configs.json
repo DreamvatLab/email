@@ -9,11 +9,8 @@
     "Http": {
         "SkipCertVerification": true
     },
-    "Redis": {
-        "Addrs": [
-            "192.168.188.166:6379"
-        ],
-        "Password": "Famous901"
+    "ConnectionStrings": {
+        "Redis": "redis://:Famous901@192.168.188.166:6379"
     },
     "Consul": {
         "Addr": "192.168.188.166:8500",
