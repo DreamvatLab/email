@@ -1,15 +1,15 @@
-module github.com/DeamvatLab/email/main
+module github.com/DreamvatLab/email/main
 
 go 1.24.2
 
-replace github.com/DeamvatLab/go => ../../go
+replace github.com/DreamvatLab/go => ../../go
 
-replace github.com/DeamvatLab/host => ../../host
+replace github.com/DreamvatLab/host => ../../host
 
-replace github.com/DeamvatLab/email => ../
+replace github.com/DreamvatLab/email => ../
 
 require (
-	github.com/DeamvatLab/email v0.0.0
+	github.com/DreamvatLab/email v0.0.0
 	github.com/DreamvatLab/go v1.0.16
 	github.com/DreamvatLab/host v1.0.17
 	github.com/redis/go-redis/v9 v9.8.0

@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/DeamvatLab/email"
+	"github.com/DreamvatLab/email"
 	"github.com/stretchr/testify/require"
 )
 

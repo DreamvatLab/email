@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package email;
 
-option go_package = "github.com/DeamvatLab/email";
+option go_package = "github.com/DreamvatLab/email";
 
 message EmailAccount {
     string ID = 1;

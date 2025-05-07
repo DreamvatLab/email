@@ -1,9 +1,9 @@
 package dal
 
 import (
-	"github.com/DeamvatLab/email"
-	"github.com/DeamvatLab/email/main/core"
-	"github.com/DeamvatLab/email/main/dal/redis"
+	"github.com/DreamvatLab/email"
+	"github.com/DreamvatLab/email/main/core"
+	"github.com/DreamvatLab/email/main/dal/redis"
 )
 
 type IDataAccess interface {

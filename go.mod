@@ -1,4 +1,4 @@
-module github.com/DeamvatLab/email
+module github.com/DreamvatLab/email
 
 go 1.24.2
 

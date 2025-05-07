@@ -6,8 +6,8 @@ import (
 	"crypto/tls"
 	"strings"
 
-	"github.com/DeamvatLab/email"
-	"github.com/DeamvatLab/email/main/dal"
+	"github.com/DreamvatLab/email"
+	"github.com/DreamvatLab/email/main/dal"
 	"github.com/DreamvatLab/go/xconv"
 	"github.com/DreamvatLab/go/xerr"
 	"gopkg.in/mail.v2"

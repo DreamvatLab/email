@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/DeamvatLab/email"
+	"github.com/DreamvatLab/email"
 	"github.com/DreamvatLab/go/xconfig"
 	"github.com/DreamvatLab/go/xerr"
 	"github.com/DreamvatLab/go/xredis"
